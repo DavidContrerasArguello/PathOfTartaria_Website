@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=MedievalSharp&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-.lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 
 .madimi-one-regular {
     font-family: "Madimi One", sans-serif;
@@ -14,38 +8,72 @@
     font-style: normal;
 }
 
-.medievalsharp-regular {
-    font-family: "MedievalSharp", cursive;
+.honk-titulo {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+}
+
+.ojuju-textoGeneral {
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
 }
 
+/*Mobile First*/
+
+
 body{
-    background-image: linear-gradient(rgb(56, 38, 38), rgb(255, 64, 0));
+    background-image: url('img/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
 
-h1{
+#titulo{
     text-align: center;
-    font-family: Madimi One;
+    font-family: Honk;
+    color: rgb(158, 158, 145);
+    font-size: 3em;
+}
+
+#breakLine {
+    margin-left: 5%;
+    width: 90%;
+}
+
+#endLine {
+    margin-left: 35%;
+    width: 30%;
 }
 
 img {
-    width: 800px;
+    width: 300px;
+}
+
+p {
+    color: whitesmoke;
+    font-family: Ojuju;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-family: Honk;
+    text-align: center;
 }
 
 nav{
     padding: 1.4%;
     background-color: #411414;
-    overflow: hidden;
     font-family: Madimi One;
-}
-
-nav li{
-    margin-left: 12%;
+    text-underline-offset: 10px;
 }
 
 nav ul {
@@ -66,68 +94,71 @@ nav li a {
     padding: 14px 14px;
 }
 
+#logo :hover{
+    background-color: #ffffff00;
+}
+
 nav li a:hover {
     background-color: #ddd;
     color: black;
     border-radius: 15px 0px 15px 0px;
 }
-p{
-    font-family: Lato;
-    font-size: 30px;
-}
-#imgprincipal{
-    margin-left: 27%;
-}
-#presentacion{
-    background-color: rgba(0, 0, 0, 0.438);
-    margin: 0%;
-}
-#presentacion p{
-    padding: 0% 2% 0% 2%;
-}
-#presentacion img{
-    margin-left: 25%;
-    padding: 2%;
-}
+
 #presentacion li{
-    font-family: Lato;
-    font-size: 30px;
+    color: whitesmoke;
 }
-#presentacion ul{
-    padding: 0% 0% 2% 0%;
-    margin-left: 13%;
+
+
+#niveles img {
+    width: 45%;
+    border: rgb(247, 155, 68) 5px solid;
+    border-image: url('img/bordes.png');
+    border-image-slice: 60 50 50 50;
+    border-image-repeat: round;
 }
-#niveles{
+
+#niveles p{
+    width: 45%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#div_flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.438);
 }
-#playlist{
-    background-color: rgba(0, 0, 0, 0.438);
-    margin: 0%;
+
+#div_flex p, img {
+    padding: 1vh;
 }
+
+
 #playlist iframe{
-    margin-left: 25%;
+    width: 90%;
+    margin: 5%;
 }
-#contacto{
-    margin: 0%;
-    padding: 3%;
-    margin-left: 75%;
-    margin-top: -15%;
-    position: absolute; 
-}
-#contacto li{
-    font-family: Lato;
-    font-size: 30px;
-}
-#contacto ul{
-    padding: 0% 0% 2% 0%;
-    margin-left: 44%;
-}
+
 footer{
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
     margin: 0%;
     padding: 2%;
+}
+
+footer p {
     text-align: center;
 }
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto li{
+    font-family: Lato;
+    font-size: 1.6em;
+    padding: 2vw;
+    margin-left: 13vw;
+}
+
