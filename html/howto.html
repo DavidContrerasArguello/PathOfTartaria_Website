@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>howto</title>
+    <title>Path of Tartaria | GUÍA DE JUEGO</title>
+    <link rel="stylesheet" href="../style_html.css">
+    <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
     <header>
@@ -12,25 +14,46 @@
 
     <nav>
         <ul>
-            <li id="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
-            <li><a href="html/howto.html">GUÍA</a></li>
-            <li><a href="html/story.html">HISTORIA</a></li>
-            <li><a href="html/us.html">NOSOTROS</a></li>
-            <li><a href="html/contact.html">CONTACTO</a></li>    
+            <li id="logo"><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></li>
+            <li><a href="howto.html">GUÍA</a></li>
+            <li><a href="story.html">HISTORIA</a></li>
+            <li><a href="us.html">NOSOTROS</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>    
         </ul>
     </nav>
+
+    <div id="espaciado"></div>
 
     <div id="requisitos">
         <h1>Requisitos</h1>
         <p>Path of Tartaria es un juego desarrollado y ejecutado mediante la interfaz gráfica de java. No consume muchos recursos y podría ser ejecutado en práticamente todos los dispositivos</p>
         <h2>Requisitos mínimos</h2>
-        <ul>
-            <li>Java 8 401</li>
-            <li>SO: Windows 10</li>
-            <li>CPU: Procesador Intel-Core i3</li>
-            <li>RAM: 2 GB RAM</li>
-            <li>Almacenamiento: 21 MB</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Requisito</th>
+                <th>Detalles</th>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Java 8 401</td>
+            </tr>
+            <tr>
+                <td>Sistema Operativo</td>
+                <td>Windows 10</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>Procesador Intel-Core i3</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>2 GB RAM</td>
+            </tr>
+            <tr>
+                <td>Almacenamiento</td>
+                <td>21 MB</td>
+            </tr>
+        </table>
     </div>
     <div id="instalacion">
         <h1>Instalación</h1>
@@ -38,13 +61,21 @@
     </div>
     <div id="guia">
         <h1>Guía</h1>
-        <p>El juego consta de tres niveles de plataforma en los que para superarlos deberás acabar con todos los enemigos: <br>
-            El primer nivel consta de diferentes plataformas que debes alcanzar para acabar con todos los enemigos de la zona. Una vez acabes con todos sin morir habrás terminado el nivel <br>
-            El segundo nivel te llevará a escalar una montaña algo elevada y acabar con los enemigos de su interior para evitar la erupción del volcán <br>
+        <p>El juego consta de tres niveles de plataformas en los que deberás acabar con todos los enemigos para superarlos: <br> <br>
+
+            Cada nivel tendrá pociones con las que curar una fracción de la salud del personaje y trampas que deberás evitar para no morir y perder. <br><br> 
+
+            En el primer nivel deberás acabar con todos los enemigos de la zona. <br> Una vez acabes con todos habrás terminado el nivel. Los enemigos están estratégicamente colocados
+            para que sea un desafio. <br> <br>
+
+            El segundo nivel te llevará a escalar una montaña elevada y acabar con los enemigos de su interior para evitar la erupción del volcán. <br> <br>
+
             El tercer y último nivel te llevará a Tartaria, dónde tendrás que hacer un parkour y abrirte paso entre los enemigos para llegar al cubo de la cuarta dimensión.<br>
+            El último nivel es secreto, por lo que deberás superar el juego para descubrir quién te espera allí.
         </p>
+
         <h2>Controles</h2>
-        <ul>
+        <ul id="controles">
             <li>A: Correr a la izquierda</li>
             <li>D: Correr a la derecha</li>
             <li>E o CLICK IZQ: Atacar</li>
