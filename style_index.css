@@ -144,6 +144,9 @@ nav li a:hover {
 #playlist iframe{
     width: 90%;
     margin: 5%;
+    -webkit-box-shadow:0px 0px 60px 5px rgba(0,255,179,0.6);
+    -moz-box-shadow: 0px 0px 60px 5px rgba(0,255,179,0.6);
+    box-shadow: 0px 0px 60px 5px rgba(0,255,179,0.6);
 }
 
 #contacto {
@@ -179,4 +182,197 @@ footer{
 
 footer p {
     text-align: center;
+}
+
+
+/*Diseño Web Ordenador*/
+
+@media screen and (min-width: 1080px) {
+
+    #container {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-areas: 
+       
+        "titulo titulo"
+        "navbar navbar"
+        "presentacion niveles"
+        "breakline breakline"
+        "playlist playlist"
+        "contacto contacto"
+        "endline endline"
+        "footer footer"
+        ;
+    }
+
+    body{
+        background-image: url('img/fondo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 20%; 
+        margin: 0;
+        padding: 0;
+    }
+    
+    #titulo{
+        text-align: center;
+        font-family: Honk;
+        color: rgb(118, 118, 114);
+        background-color: #4a494980;
+        font-size: 3em;
+        margin: 0;
+        grid-area: titulo;
+
+    }
+    
+    #breakLine {
+        margin-left: 5%;
+        width: 90%;
+        grid-area: breakline;
+
+    }
+    
+    #endLine {
+        margin-left: 40%;
+        width: 15%;
+        grid-area: endline;
+
+    }
+    
+    img {
+        width:  70%;
+    }
+    
+    p {
+        color: whitesmoke;
+        font-family: Ojuju;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 2em;
+    }
+
+    nav{
+        grid-area: navbar;
+        padding: 1.4%;
+        background-color: #411414;
+        font-family: Madimi One;
+        text-underline-offset: 10px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    nav li {
+        float: left;
+        font-size: 2em;
+    }
+    
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 40px;
+        height: 90px;
+    }
+    
+    #logo img {
+        width: 8vw; 
+    }
+    
+    #logo :hover{
+        background-color: #ffffff00;
+    }
+    
+    nav li a:hover {
+        background-color: #ddd;
+        color: black;
+        border-radius: 15px 0px 15px 0px;
+    }
+    
+    #presentacion{
+        text-align: center;
+        grid-area: presentacion;
+        width: 100%;
+        margin-top: 20%;
+    }
+    
+    #presentacion li{
+        color: whitesmoke;
+    }
+    
+    #niveles {
+        grid-area: niveles;
+        width: 100%;
+    }
+
+    #niveles img {
+        width: 80%;
+    }
+    
+    #niveles p{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1em;
+    }
+    
+    #div_flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #div_flex p, img {
+        padding: 1vh;
+    }
+    
+    #playlist {
+        grid-area: playlist;
+    }
+    
+    #playlist iframe{
+        width: 90%;
+        margin: 5%;
+    }
+    
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        background-image: linear-gradient(rgba(56, 56, 56, 0), rgb(158, 156, 112), rgba(56, 56, 56, 0));
+        align-items: center;
+        grid-area: contacto;
+    }
+    
+    #contacto li{
+        font-family: Lato;
+        font-size: 1.6em;
+        padding: 2vw;
+        margin-left: 13vw;
+    }
+    
+    #contacto a{
+        font-family: Lato;
+        color: rgba(8, 8, 252, 0.668);
+    }
+    
+    #correo_contacto {
+        width:70vw;
+    }
+    
+    footer{
+        background-color:rgba(38, 38, 38, 0.873);
+        color: whitesmoke;
+        margin: 0%;
+        padding: 2%;
+        grid-area: footer;
+    }
+    
+    footer p {
+        text-align: center;
+    }
 }

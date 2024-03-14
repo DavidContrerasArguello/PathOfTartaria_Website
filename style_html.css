@@ -51,7 +51,12 @@ body{
 }
 
 #endLine {
-    width: 150px;
+    margin-left: 40%;
+    width: 15%;
+}
+
+#img_tartaria {
+   margin-left: 25%;
 }
 
 img {
@@ -229,7 +234,7 @@ th {
 }
 
 input[type="text"], input[type="email"], textarea {
-    width: 90%;
+    width: 98%;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -242,7 +247,7 @@ textarea {
 }
 
 input[type="submit"] {
-    width: 90%;
+    width: 98%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -256,6 +261,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 #desarrolladores p{
     font-size: 25px;
     padding: 2%;
@@ -286,4 +292,99 @@ footer p {
         height: 40%;
         margin-left: 23%;
     }
+
+    #breakLine {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    
+    #endLine {
+        margin-left: 41% ;
+        height: 20vh;
+    }
+
+    p {
+        color: whitesmoke;
+        font-family: Ojuju;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #565bf5;
+    box-sizing: border-box;
+    }
+
+    textarea {
+        height: 150px;
+    } 
+
+    input[type="submit"] {
+        width: 98%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+         margin: 8px 0;
+          border: none;
+         border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    nav{
+        grid-area: navbar;
+        padding: 1.4%;
+        background-color: #411414;
+        font-family: Madimi One;
+        text-underline-offset: 10px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    nav li {
+        float: left;
+        font-size: 2em;
+    }
+    
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 40px;
+        height: 90px;
+    }
+    
+    #logo img {
+        width: 8vw; 
+    }
+    
+    #logo :hover{
+        background-color: #ffffff00;
+    }
+    
+    nav li a:hover {
+        background-color: #ddd;
+        color: black;
+        border-radius: 15px 0px 15px 0px;
+    }
+
   }
