@@ -256,6 +256,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+#desarrolladores p{
+    font-size: 25px;
+    padding: 2%;
+}
+
+#foto{
+    width: 97%;
+    height: 50%;
+}
 
 footer{
     background-color:rgba(38, 38, 38, 0.873);
@@ -267,3 +276,14 @@ footer{
 footer p {
     text-align: center;
 }
+
+@media only screen and (min-width: 1024px) {
+    h1{
+        font-size: 63px;
+    }
+    #foto{
+        width: 50%;
+        height: 40%;
+        margin-left: 23%;
+    }
+  }
