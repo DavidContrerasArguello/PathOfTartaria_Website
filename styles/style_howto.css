@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 
+
+/* ========================================================================== */
+/* RESTO DE ESTILOS DE LA PÁGINA DE GUÍA                                    */
+/* ========================================================================== */
+
 /* Animaciones */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -69,7 +74,7 @@
     margin-bottom: 3rem;
 }
 
-/* Títulos de secciones */
+/* Títulos de secciones (Estilos originales de esta página) */
 #requisitos h1, #instalacion h1, #guia h1 {
     color: #ddd;
     font-family: 'Cinzel Decorative', cursive;
@@ -346,6 +351,26 @@ p {
 
 /* Responsividad */
 @media (max-width: 767px) {
+    /* Estilos responsive del encabezado */
+    header#titulo {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    header#titulo h1 {
+        font-size: 2.5rem;
+    }
+
+    header#titulo h1::before {
+        top: -15px;
+        font-size: 0.8rem;
+    }
+
+    header#titulo h1::after {
+        bottom: -15px;
+        font-size: 1rem;
+    }
+
+    /* Estilos responsive de la página de guía */
     #requisitos, #instalacion, #guia {
         padding: 1.5rem;
         margin: 1.5rem 0.5rem;
@@ -425,6 +450,26 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 1079px) {
+    /* Estilos responsive del encabezado */
+    header#titulo {
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+
+    header#titulo h1 {
+        font-size: 3.5rem;
+    }
+
+    header#titulo h1::before {
+        top: -20px;
+        font-size: 1rem;
+    }
+
+    header#titulo h1::after {
+        bottom: -20px;
+        font-size: 1.2rem;
+    }
+
+    /* Estilos responsive de la página de guía */
     .requisitos-container {
         flex-direction: column !important;
         gap: 1.5rem;
@@ -436,6 +481,26 @@ p {
 }
 
 @media (min-width: 1080px) {
+    /* Estilos responsive del encabezado */
+    header#titulo {
+        padding: 3.5rem 1rem 2rem 1rem;
+    }
+
+    header#titulo h1 {
+        font-size: 4rem;
+    }
+
+    header#titulo h1::before {
+        top: -25px;
+        font-size: 1.2rem;
+    }
+
+    header#titulo h1::after {
+        bottom: -25px;
+        font-size: 1.4rem;
+    }
+
+    /* Estilos responsive de la página de guía */
     #requisitos, #instalacion, #guia {
         padding: 3rem;
     }
