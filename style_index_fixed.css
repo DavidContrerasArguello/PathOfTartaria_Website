@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
+/* Estilos generales */
+body {
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ojuju', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Reset de imágenes globales */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility classes */
+.clearfix {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header#titulo {
+    padding: 3rem 1rem 1.5rem 1rem;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(74, 73, 73, 0.5), #411414);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+header#titulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/tartariamapa.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+header#titulo h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-shadow: 0 0 15px rgba(255,0,0,0.5),
+                 0 0 30px rgba(255,0,0,0.3);
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffffff, #bcbcbc, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+header#titulo h1::before {
+    content: 'ᛏᚨᚱᛏᚨᚱᛁᚨ';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    opacity: 0.7;
+    color: #b78d4d;
+    font-family: Arial, sans-serif;
+    letter-spacing: 8px;
+}
+
+header#titulo h1::after {
+    content: '⚜ ⚔ ⚜';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: #b78d4d;
+}
+
+/* Sección presentación */
+#presentacion {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(0,0,0,0.7);
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #672626;
+    clear: both;
+}
+
+#presentacion h1 {
+    color: #ddd;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#presentacion img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
+#historia {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Divisor */
+#breakLine {
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    clear: both;
+}
+
+/* Sección niveles */
+#niveles {
+    padding: 2rem 1rem;
+    background-color: rgba(0,0,0,0.6);
+    margin: 2rem 0;
+    border-top: 3px solid #672626;
+    border-bottom: 3px solid #672626;
+    clear: both;
+}
+
+#niveles h1 {
+    text-align: center;
+    color: #ddd;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#div_flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.level-card {
+    background: rgba(40, 10, 10, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.level-card h2 {
+    text-align: center;
+    color: #ddd;
+    padding: 1rem;
+    margin: 0;
+    background: linear-gradient(to right, #411414, #672626);
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.level-card img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.level-card p {
+    padding: 1.5rem;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Playlist */
+#playlist {
+    background-color: rgba(0,0,0,0.7);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 2rem 0;
+    clear: both;
+}
+
+#playlist h1 {
+    color: #ddd;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.spotify-container {
+    max-width: 800px;
+    margin: 1rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#playlist iframe {
+    width: 100%;
+    height: 352px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+/* Contacto */
+#contacto {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(158, 156, 112, 0.5), rgba(0,0,0,0.7));
+    clear: both;
+}
+
+#contacto h1 {
+    color: #ddd;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#correo_contacto {
+    max-width: 800px;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Footer */
+#endLine {
+    display: block;
+    margin: 2rem auto;
+    width: 30%;
+    max-width: 500px;
+    clear: both;
+}
+
+footer {
+    background-color: rgba(38, 38, 38, 0.95);
+    color: #ddd;
+    padding: 1.5rem 0;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    header#titulo {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    header#titulo h1 {
+        font-size: 2.5rem;
+    }
+
+    header#titulo h1::before {
+        top: -15px;
+        font-size: 0.8rem;
+    }
+
+    header#titulo h1::after {
+        bottom: -15px;
+        font-size: 1rem;
+    }
+
+    #presentacion img {
+        width: 95%;
+    }
+
+    /* Tarjetas de nivel en móvil: una encima de otra */
+    #div_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .level-card {
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+
+    .level-card img {
+        height: 200px !important;
+    }
+
+    #correo_contacto {
+        width: 95%;
+    }
+
+    #playlist iframe {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1079px) {
+    header#titulo {
+        padding: 3rem 1rem 1.5rem 1rem;
+    }
+
+    header#titulo h1 {
+        font-size: 3.5rem;
+    }
+
+    header#titulo h1::before {
+        top: -20px;
+        font-size: 1rem;
+    }
+
+    header#titulo h1::after {
+        bottom: -20px;
+        font-size: 1.2rem;
+    }
+
+    /* Tarjetas de nivel en tablet: dos por fila */
+    #div_flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .level-card {
+        width: calc(47% - 1rem);
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .level-card p {
+        flex-grow: 1;
+    }
+}
+
+@media (min-width: 1080px) {
+    header#titulo {
+        padding: 3.5rem 1rem 2rem 1rem;
+    }
+
+    header#titulo h1 {
+        font-size: 4rem;
+    }
+
+    header#titulo h1::before {
+        top: -25px;
+        font-size: 1.2rem;
+    }
+
+    header#titulo h1::after {
+        bottom: -25px;
+        font-size: 1.4rem;
+    }
+
+    /* Tarjetas de nivel en escritorio: tres en una fila horizontal */
+    #div_flex {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .level-card {
+        flex: 1;
+        width: 30%;
+        max-width: 33%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .level-card p {
+        flex-grow: 1;
+    }
+
+    #presentacion,
+    #niveles,
+    #playlist,
+    #contacto {
+        padding: 3rem 2rem;
+    }
+}
