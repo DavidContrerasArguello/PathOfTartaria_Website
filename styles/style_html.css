@@ -1,92 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Lobster+Two&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+/* Import common styles */
+@import 'style_common.css';
 
-.madimi-one-regular {
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+/* Page specific styles - for inner pages */
 
-.honk-titulo {
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
-}
-
-.ojuju-textoGeneral {
-    font-family: "Ojuju", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-}
-
-/*Mobile First*/
-
-
-body{
-    background-image: url('../img/fondo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-}
-
-#titulo{
-    text-align: center;
-    font-family: Honk;
-    color: rgb(158, 158, 145);
-    background-color: #4a494980;
-    font-size: 3em;
-    margin: 0;
-    padding: 1.5rem 0;
-}
-
-#breakLine {
-    margin-left: 5%;
-    width: 90%;
-}
-
-#endLine {
-    margin-left: 40%;
-    width: 15%;
+/* Custom image sizing for this template */
+img {
+    width: 50vw;
+    height: 30vw;
 }
 
 #img_tartaria {
    margin-left: 25%;
-}
-
-img {
-    width: 50vw;
-    height: 30vw;
-    display: block;
-}
-
-p {
-    color: whitesmoke;
-    font-family: Ojuju;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-h1 {
-    font-family: Honk;
-    text-align: center;
-}
-
-h2 {
-    font-family: Honk;
-    width: 100%;
-    text-align: center;
-    color: #333;
-}
-
-#espaciado {
-    height: 20vh;
 }
 
 #niveles {
@@ -232,77 +156,13 @@ input[type="submit"]:hover {
     height: 50%;
 }
 
-footer{
-    background-color:rgba(38, 38, 38, 0.873);
-    color: whitesmoke;
-    margin: 0%;
-    padding: 2%;
-}
+/* Footer styles moved to style_common.css */
 
-footer p {
-    text-align: center;
-}
-
+/* Media query moved to style_common.css */
 @media only screen and (min-width: 1024px) {
-    h1{
-        font-size: 63px;
-    }
     #foto{
         width: 50%;
         height: 40%;
         margin-left: 23%;
     }
-
-    #breakLine {
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    
-    #endLine {
-        margin-left: 41% ;
-        height: 20vh;
-    }
-
-    p {
-        color: whitesmoke;
-        font-family: Ojuju;
-        margin-left: 15%;
-        margin-right: 15%;
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    input[type="text"], input[type="email"], textarea {
-    width: 98%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #565bf5;
-    box-sizing: border-box;
-    }
-
-    textarea {
-        height: 150px;
-    } 
-
-    input[type="submit"] {
-        width: 98%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-         margin: 8px 0;
-          border: none;
-         border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-
-  }
+}

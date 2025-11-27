@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
 
+/* Fondo se ha movido a style_common.css para aplicarse a todas las páginas */
+
 
 /* ========================================================================== */
 /* RESTO DE ESTILOS DE LA PÁGINA DE GUÍA                                    */
@@ -63,7 +65,11 @@
 
 #requisitos {
     animation: fadeIn 0.8s ease-in-out;
+    margin-top: 1rem; /* Reducido de 2rem a 1rem para menor separación */
+    position: relative;
 }
+
+/* Eliminado el fondo del popocatépetl del elemento #requisitos */
 
 #instalacion {
     animation: fadeIn 0.8s ease-in-out 0.2s both;
@@ -106,14 +112,28 @@ h2 {
 }
 
 /* Tablas de requisitos */
+.table-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table-section h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
-    background-color: rgba(40, 10, 10, 0.7) !important;
+    background-color: rgba(40, 10, 10, 0.75) !important;
     border-radius: 8px;
     overflow: hidden;
     animation: slideInFromBottom 0.5s ease-out 0.5s backwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 th {
@@ -147,6 +167,8 @@ tr:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Sección de descarga */
@@ -376,11 +398,21 @@ p {
         margin: 1.5rem 0.5rem;
         overflow-x: hidden;
     }
+
+    /* Reducir espaciado para la primera sección */
+    #requisitos {
+        margin-top: 0.75rem;
+    }
     
     /* Fix para las tablas en móviles */
     .requisitos-container {
         flex-direction: column !important;
         gap: 1.5rem;
+    }
+
+    .table-section h2 {
+        text-align: center;
+        margin-bottom: 1rem !important;
     }
     
     /* Contenedor para tablas con scroll horizontal si es necesario */
@@ -474,7 +506,11 @@ p {
         flex-direction: column !important;
         gap: 1.5rem;
     }
-    
+
+    .table-section h2 {
+        text-align: center;
+    }
+
     table {
         width: 100% !important;
     }
@@ -521,9 +557,15 @@ p {
         flex-direction: row;
         justify-content: space-between;
         gap: 3rem;
+        width: 100%;
     }
 
     .requisitos-container table {
+        width: 100%;
+        margin: 0;
+    }
+
+    .table-section {
         width: calc(50% - 1.5rem);
         margin: 0;
     }
