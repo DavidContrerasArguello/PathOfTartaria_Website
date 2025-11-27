@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path of Tartaria | GUÍA DE JUEGO</title>
-    <link rel="stylesheet" href="../style_html.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style_html.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style_guide.css">
     <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
@@ -30,61 +31,148 @@
     <div id="espaciado"></div>
 
     <div id="requisitos">
-        <h1>Requisitos</h1>
-        <p>Path of Tartaria es un juego desarrollado y ejecutado mediante la interfaz gráfica de java. No consume muchos recursos y podría ser ejecutado en práticamente todos los dispositivos</p>
-        <h2>Requisitos mínimos</h2>
-        <table>
-            <tr>
-                <th>Requisito</th>
-                <th>Detalles</th>
-            </tr>
-            <tr>
-                <td>Java</td>
-                <td>Java 8 401</td>
-            </tr>
-            <tr>
-                <td>Sistema Operativo</td>
-                <td>Windows 10</td>
-            </tr>
-            <tr>
-                <td>CPU</td>
-                <td>Procesador Intel-Core i3</td>
-            </tr>
-            <tr>
-                <td>RAM</td>
-                <td>2 GB RAM</td>
-            </tr>
-            <tr>
-                <td>Almacenamiento</td>
-                <td>21 MB</td>
-            </tr>
-        </table>
+        <h1>Requisitos del Sistema</h1>
+        <p>Path of Tartaria ha sido desarrollado para ser accesible a la mayor cantidad de jugadores posible. Utilizando la potente interfaz gráfica de Java, el juego ofrece una experiencia fluida sin exigir un hardware potente, permitiendo que prácticamente cualquier dispositivo moderno pueda ejecutarlo sin problemas.</p>
+
+        <div class="requisitos-container">
+            <h2>Requisitos Mínimos</h2>
+            <table>
+                <tr>
+                    <th>Componente</th>
+                    <th>Especificación</th>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Java 8 401 o superior</td>
+                </tr>
+                <tr>
+                    <td>Sistema Operativo</td>
+                    <td>Windows 7/8/10/11, macOS 10.12+, Linux (distribuciones actuales)</td>
+                </tr>
+                <tr>
+                    <td>Procesador</td>
+                    <td>Intel Core i3 o equivalente</td>
+                </tr>
+                <tr>
+                    <td>Memoria RAM</td>
+                    <td>2 GB</td>
+                </tr>
+                <tr>
+                    <td>Almacenamiento</td>
+                    <td>21 MB de espacio libre</td>
+                </tr>
+                <tr>
+                    <td>Gráficos</td>
+                    <td>Tarjeta gráfica integrada compatible</td>
+                </tr>
+            </table>
+
+            <h2>Requisitos Recomendados</h2>
+            <table>
+                <tr>
+                    <th>Componente</th>
+                    <th>Especificación</th>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Java 11 o superior</td>
+                </tr>
+                <tr>
+                    <td>Sistema Operativo</td>
+                    <td>Windows 10/11, macOS 12+</td>
+                </tr>
+                <tr>
+                    <td>Procesador</td>
+                    <td>Intel Core i5 o equivalente</td>
+                </tr>
+                <tr>
+                    <td>Memoria RAM</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td>Almacenamiento</td>
+                    <td>50 MB de espacio libre (SSD recomendado)</td>
+                </tr>
+                <tr>
+                    <td>Gráficos</td>
+                    <td>Cualquier tarjeta dedicada</td>
+                </tr>
+            </table>
+        </div>
     </div>
+
     <div id="instalacion">
         <h1>Instalación</h1>
-        <p>La instalación del juego es sencilla puesto que todo el juego se encuentra dentro de un archivo JAR ejecutable que puedes descargar <a href="">aquí</a></p>
+        <p>La instalación de Path of Tartaria es extremadamente sencilla. Todo el juego se encuentra empaquetado dentro de un único archivo JAR ejecutable, lo que permite una experiencia de juego inmediata sin complicados procesos de instalación.</p>
+
+        <div class="instrucciones-container">
+            <h2>Pasos de Instalación</h2>
+            <ul id="controles">
+                <li>Descarga el archivo JAR del juego desde el botón de descarga a continuación</li>
+                <li>Asegúrate de tener Java instalado en tu sistema (Java 8 o superior)</li>
+                <li>Haz doble clic en el archivo JAR descargado para iniciar el juego</li>
+                <li>Si tienes problemas para ejecutarlo, abre una terminal y escribe: <br><code>java -jar PathOfTartaria.jar</code></li>
+            </ul>
+
+            <div class="download-section">
+                <a href="" class="download-button">DESCARGAR AHORA</a>
+                <p class="version-info">Versión actual: 1.2.1 | Tamaño: 21 MB</p>
+            </div>
+        </div>
     </div>
     <div id="guia">
-        <h1>Guía</h1>
-        <p>El juego consta de tres niveles de plataformas en los que deberás acabar con todos los enemigos para superarlos: <br> <br>
+        <h1>Guía de Juego</h1>
+        <p>Path of Tartaria es una aventura de plataformas en 2D donde te pondrás en la piel del mítico Mr Tartaria. El juego combina acción, exploración y una narrativa épica a través de tres niveles únicos con mecánicas de plataformas clásicas y combate.</p>
 
-            Cada nivel tendrá pociones con las que curar una fracción de la salud del personaje y trampas que deberás evitar para no morir y perder. <br><br> 
+        <img src="../img/tartariamapa.png" alt="Mapa del mundo de Tartaria" class="guide-image">
 
-            En el primer nivel deberás acabar con todos los enemigos de la zona. <br> Una vez acabes con todos habrás terminado el nivel. Los enemigos están estratégicamente colocados
-            para que sea un desafio. <br> <br>
+        <h2>Mecánicas Básicas</h2>
+        <p>Durante tu aventura encontrarás diversos elementos:</p>
+        <ul id="controles">
+            <li>Pociones: Restauran parte de tu salud</li>
+            <li>Trampas: Reducen tu salud al contacto</li>
+            <li>Enemigos: Debes derrotarlos para avanzar</li>
+            <li>Plataformas: Algunas pueden moverse o desaparecer</li>
+        </ul>
 
-            El segundo nivel te llevará a escalar una montaña elevada y acabar con los enemigos de su interior para evitar la erupción del volcán. <br> <br>
+        <h2>Niveles</h2>
 
-            El tercer y último nivel te llevará a Tartaria, dónde tendrás que hacer un parkour y abrirte paso entre los enemigos para llegar al cubo de la cuarta dimensión.<br>
-            El último nivel es secreto, por lo que deberás superar el juego para descubrir quién te espera allí.
-        </p>
+        <div class="nivel-info">
+            <h3>NIVEL 1: ÁFRICA</h3>
+            <p>Las tierras salvajes de África te ponen a prueba. Debes eliminar a todos los enemigos de la zona para completar el nivel. Los enemigos están estratégicamente colocados para que sea un desafío. Cuidado con las trampas ocultas entre la vegetación.</p>
+        </div>
+
+        <div class="nivel-info">
+            <h3>NIVEL 2: POPOCATÉPETL</h3>
+            <p>Escala la montaña sagrada y acaba con los enemigos de su interior para evitar la erupción del volcán. La dificultad aumenta con plataformas móviles y zonas de lava que debes evitar. Las caídas desde gran altura pueden ser fatales.</p>
+        </div>
+
+        <div class="nivel-info">
+            <h3>NIVEL 3: TARTARIA</h3>
+            <p>El nivel final te lleva a la mítica civilización perdida donde deberás realizar complejos saltos y parkour mientras te abres paso entre enemigos más poderosos. Tu objetivo: alcanzar el misterioso cubo de la cuarta dimensión. ¿Qué secretos te aguardan?</p>
+        </div>
+
+        <div class="nivel-info">
+            <h3>NIVEL SECRETO</h3>
+            <p>Completa los tres niveles principales para desbloquear una experiencia única que revelará los mayores secretos de Path of Tartaria. ¿Quién te espera allí? Solo los más hábiles podrán descubrirlo.</p>
+        </div>
 
         <h2>Controles</h2>
         <ul id="controles">
             <li>A: Correr a la izquierda</li>
             <li>D: Correr a la derecha</li>
-            <li>E o CLICK IZQ: Atacar</li>
+            <li>E o CLICK IZQUIERDO: Atacar</li>
             <li>ESPACIO: Saltar</li>
+            <li>ESC: Pausa</li>
+        </ul>
+
+        <h2>Consejos para Principiantes</h2>
+        <ul id="controles">
+            <li>Explora cada rincón para encontrar pociones ocultas</li>
+            <li>Observa los patrones de movimiento de los enemigos antes de atacar</li>
+            <li>Aprovecha la altura para atacar desde posiciones ventajosas</li>
+            <li>Algunas plataformas pueden revelar secretos al interactuar con ellas</li>
+            <li>En caso de dificultad, intenta primero eliminar enemigos aislados</li>
         </ul>
     </div>
 </body>

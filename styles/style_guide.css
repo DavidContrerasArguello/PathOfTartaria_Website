@@ -1,0 +1,438 @@
+/* Estilos específicos para la página de guía */
+
+/* Estilos generales de contenedores y secciones */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); }
+    100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.2); }
+}
+
+/* Contenedores principales */
+#requisitos, #instalacion, #guia {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+#requisitos {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#instalacion {
+    animation: fadeIn 0.8s ease-in-out 0.2s both;
+}
+
+#guia {
+    animation: fadeIn 0.8s ease-in-out 0.4s both;
+    margin-bottom: 3rem;
+}
+
+/* Títulos de secciones */
+#requisitos h1, #instalacion h1, #guia h1 {
+    color: #ddd;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#requisitos h1::after, #instalacion h1::after, #guia h1::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #672626, transparent);
+    background-size: 200% 200%;
+    bottom: 0;
+    left: 10%;
+    animation: gradientShift 3s ease infinite;
+}
+
+h2 {
+    color: #b78d4d !important;
+    font-family: 'Cinzel Decorative', cursive !important;
+    font-size: 1.6rem !important;
+    margin: 1.5rem 0 1rem 0 !important;
+    letter-spacing: 1px;
+}
+
+/* Tablas de requisitos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: rgba(40, 10, 10, 0.7) !important;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: slideInFromBottom 0.5s ease-out 0.5s backwards;
+}
+
+th {
+    background: linear-gradient(to right, #411414, #672626) !important;
+    color: white !important;
+    padding: 15px !important;
+    text-align: left !important;
+    font-family: 'Cinzel Decorative', cursive !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+}
+
+td {
+    border: 1px solid #411414 !important;
+    padding: 15px !important;
+    color: #ddd !important;
+    font-family: 'Ojuju', sans-serif !important;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(60, 20, 20, 0.5) !important;
+}
+
+tr:hover {
+    background-color: rgba(103, 38, 38, 0.4) !important;
+}
+
+/* Enlaces de descarga */
+/* Contenedor de requisitos */
+.requisitos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 1080px) {
+    .requisitos-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .requisitos-container table {
+        width: calc(50% - 1.5rem);
+        margin: 0;
+    }
+
+    .requisitos-container h2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Sección de descarga */
+.instrucciones-container {
+    background-color: rgba(40, 10, 10, 0.7);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.download-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.version-info {
+    color: #999 !important;
+    font-size: 0.9rem !important;
+    margin-top: 1rem !important;
+}
+
+/* Estilos para el código */
+code {
+    background-color: #411414;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #ddd;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* Botones de descarga */
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(to bottom, #672626, #411414);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    animation: glow 3s ease infinite;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.download-button:hover::before {
+    left: 100%;
+}
+
+.download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+#instalacion a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(to bottom, #672626, #411414);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    animation: glow 3s ease infinite;
+}
+
+#instalacion a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+#instalacion a:hover::before {
+    left: 100%;
+}
+
+#instalacion a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* Lista de controles */
+#controles {
+    background: rgba(40, 10, 10, 0.7) !important;
+    border-radius: 8px;
+    padding: 0 !important;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    list-style-type: none !important;
+    animation: slideInFromLeft 0.8s ease-in-out 0.5s backwards;
+}
+
+#controles li {
+    padding: 15px 20px !important;
+    margin: 0 !important;
+    color: #ddd !important;
+    border-bottom: 1px solid rgba(103, 38, 38, 0.5) !important;
+    font-family: 'Ojuju', sans-serif !important;
+    font-size: 1.1rem !important;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    background-color: transparent !important;
+}
+
+#controles li:last-child {
+    border-bottom: none !important;
+}
+
+#controles li:hover {
+    background-color: rgba(103, 38, 38, 0.4) !important;
+}
+
+#controles li::before {
+    content: '⚔️';
+    margin-right: 15px;
+    color: #b78d4d;
+    font-size: 1.2rem;
+}
+
+/* Párrafos */
+p {
+    color: #ddd !important;
+    font-family: 'Ojuju', sans-serif !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin: 1rem 0 !important;
+}
+
+/* Destacado de niveles */
+.nivel-info {
+    background: rgba(60, 20, 20, 0.5);
+    border-left: 4px solid #672626;
+    padding: 15px;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nivel-info:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nivel-info h3 {
+    color: #b78d4d;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.nivel-info p {
+    margin: 0 !important;
+}
+
+/* Imágenes de guía */
+.guide-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.guide-image:hover {
+    transform: scale(1.02);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #requisitos, #instalacion, #guia {
+        padding: 1.5rem;
+        margin: 1.5rem 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px !important;
+    }
+
+    #requisitos h1, #instalacion h1, #guia h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    p, #controles li {
+        font-size: 1rem !important;
+    }
+
+    .instrucciones-container {
+        padding: 1rem;
+    }
+
+    .download-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .download-button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .nivel-info {
+        padding: 10px;
+    }
+
+    .nivel-info:hover {
+        transform: none;
+    }
+
+    .guide-image:hover {
+        transform: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    #requisitos, #instalacion, #guia {
+        padding: 3rem;
+    }
+
+    #requisitos h1, #instalacion h1, #guia h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem !important;
+    }
+
+    p, #controles li {
+        font-size: 1.2rem !important;
+    }
+}
