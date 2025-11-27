@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path of Tartaria | GUÍA DE JUEGO</title>
     <link rel="stylesheet" href="../style_html.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
@@ -12,13 +13,17 @@
         <h1 id="titulo">Path of Tartaria</h1>
     </header>
 
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li id="logo"><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></li>
-            <li><a href="howto.html">GUÍA</a></li>
-            <li><a href="story.html">HISTORIA</a></li>
-            <li><a href="us.html">NOSOTROS</a></li>
-            <li><a href="contact.html">CONTACTO</a></li>    
+            <div class="navbar-left">
+                <li id="logo"><a href="../index.html"><img src="../img/logo.png" alt="logo"></a></li>
+            </div>
+            <div class="navbar-right">
+                <li class="active"><a href="howto.html">GUÍA</a></li>
+                <li><a href="story.html">HISTORIA</a></li>
+                <li><a href="us.html">NOSOTROS</a></li>
+                <li><a href="contact.html">CONTACTO</a></li>
+            </div>
         </ul>
     </nav>
 
