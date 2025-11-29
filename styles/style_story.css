@@ -168,7 +168,7 @@
 #div_flex {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -219,7 +219,7 @@
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .level-section:hover {
@@ -228,15 +228,32 @@
 }
 
 #nivel-africa {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 #nivel-popocatepetl {
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 #nivel-tartaria {
-    animation-delay: 0.9s;
+    animation-delay: 0.4s;
+}
+
+/* Ajustes adicionales para móvil */
+@media (max-width: 768px) {
+    #nivel-africa,
+    #nivel-popocatepetl,
+    #nivel-tartaria {
+        animation-delay: 0s;
+        animation-duration: 0.3s;
+        opacity: 1;
+    }
+
+    /* Forzar la visibilidad de todos los niveles en móvil */
+    .level-section {
+        opacity: 1 !important;
+        animation: none !important;
+    }
 }
 
 /* Estilo para la línea decorativa final */
@@ -307,15 +324,48 @@ footer p {
     }
 
     #niveles {
-        padding: 2rem 1rem;
+        padding: 1rem 0.5rem;
     }
 
     #niveles h1 {
         font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #div_flex {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
     #div_flex h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        padding: 0.6rem;
+        margin: 0;
+    }
+
+    #div_flex p {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin: 0;
+        max-height: 100px;
+        overflow-y: auto;
+    }
+
+    #div_flex img {
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .level-section {
+        margin-bottom: 0.8rem;
+        max-height: 290px; /* Limitar altura total para que quepan varios en pantalla */
+    }
+
+    .level-content {
+        display: flex;
+        flex-direction: column;
     }
 
     .story-quote {
